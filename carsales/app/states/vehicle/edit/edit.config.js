@@ -14,6 +14,10 @@
                     "@": { templateUrl: 'app/states/vehicle/edit/index.html' }
                 },
                 transitions: {
+                },
+                params: {
+                    obj: null,
+                    list: null
                 }
             });
 

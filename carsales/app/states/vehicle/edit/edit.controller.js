@@ -4,9 +4,9 @@
     angular.module('app.states.vehicle.edit')
         .controller('editController', editController);
 
-    editController.$inject = ['$scope', 'l10n'];
+    editController.$inject = ['$scope'];
 
-    function editController($scope, l10n) {
-        $scope.l10n = l10n;
+    function editController($scope) {
+
     }
 })();

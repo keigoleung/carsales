@@ -99,6 +99,10 @@
     <Content Include="app\components\add-page\add-page.module.js" />
     <Content Include="Scripts\underscore-min.js" />
     <Content Include="Scripts\angular-messages.min.js" />
+    <Content Include="app\components\edit-page\edit-page.controller.js" />
+    <Content Include="app\components\edit-page\edit-page.directive.js" />
+    <Content Include="app\components\edit-page\edit-page.html" />
+    <Content Include="app\components\edit-page\edit-page.module.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">

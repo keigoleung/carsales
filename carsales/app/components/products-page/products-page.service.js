@@ -11,6 +11,7 @@
 
 		self.getProducts = getProducts;
         self.addVehicle = addVehicle;
+        self.editVehicle = editVehicle;
 
         self.products;
 
@@ -29,14 +30,18 @@
         }
 
         function addVehicle(vehicle, type) {
-            if(type==='Car'){
-                var max = _.max(self.products[0].list, function(o){return o.id;});
+            var vehicles = _.findWhere(self.products, { VehicleType: type });
+            if(vehicles){
+                var max = _.max(vehicles.list, function(o){return o.id;});
                 vehicle.id = max.id+1;
-                self.products[0].list.push(vehicle);
-            } else {
-                var max = _.max(self.products[1].list, function(o){return o.id;});
-                vehicle.id = max.id+1;
-                self.products[1].list.push(vehicle);
+                vehicles.list.push(vehicle);
+            }
+        }
+
+        function editVehicle(vehicle, type) {
+            var vehicles = _.findWhere(self.products, { VehicleType: type });
+            if(vehicles){
+                _.extend(_.findWhere(vehicles.list, { id: vehicle.id }), vehicle);
             }
         }
     }

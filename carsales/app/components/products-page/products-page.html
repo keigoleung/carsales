@@ -1,9 +1,9 @@
 ﻿<div class="products-page">
     <div class="products-con">
         <h1>Vehicle List</h1>
-        <div>
-            <a class="btn btn-primary" ng-click="vm.addVehicle('Car')">Add Car</a>
-            <a class="btn btn-primary" ng-click="vm.addVehicle('Bike')">Add Bike</a>
+        <div class="btn-con">
+            <a class="btn btn-primary" ng-click="vm.addVehicle(vehicles.VehicleType)" ng-repeat="vehicles in vm.products">Add {{::vehicles.VehicleType}}</a>
+            <!--<a class="btn btn-primary" ng-click="vm.addVehicle('Bike')">Add Bike</a>-->
         </div>
 
         <div ng-tabs class="passtab" ng-init="vm.tabs=tabs">
@@ -17,18 +17,29 @@
             <div class="tab-content">
                 <div ng-tab-body class="tab-pane" ng-repeat="vehicles in vm.products">
                     <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Make</th>
+                                <th>Model</th>
+                                <th>Engine</th>
+                                <th ng-if="vehicles.VehicleType==='Car'">Door</th>
+                                <th>Wheels</th>
+                                <th>Type</th>
+                                <th></th>
+                            </tr>
+                        </thead>
                         <tbody>
                             <tr ng-repeat="vehicle in vehicles.list">
                                 <td>
-                                    {{vehicle.id}}{{vehicle.make}}
+                                    {{vehicle.make}}
                                 </td>
                                 <td>
                                     {{vehicle.model}}
                                 </td>
                                 <td>
-                                    {{vehicle.engine}}
+                                    {{vehicle.engine}}L
                                 </td>
-                                <td ng-if="vehicles.VehicleType==='Bike'">
+                                <td ng-if="vehicles.VehicleType==='Car'">
                                     {{vehicle.door}}
                                 </td>
                                 <td>
@@ -38,7 +49,7 @@
                                     {{vehicle.carType}}
                                 </td>
                                 <td>
-                                    <a class="btn btn-primary pull-right" ng-click="vm.editVehicle(vehicles.VehicleType, vehicle.id)">Edit</a>
+                                    <a class="btn btn-primary pull-right" ng-click="vm.editVehicle(vehicles.VehicleType, vehicle)">Edit</a>
                                 </td>
                             </tr>
                         </tbody>

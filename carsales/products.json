@@ -6,8 +6,8 @@
         "id": 1,
         "make": "Honda",
         "model": "Civic",
-        "engine": 1.5,
-        "door": 5,
+        "engine": "1.5",
+        "door": "5",
         "wheels": 4,
         "carType": "Hatchback"
       },
@@ -15,8 +15,8 @@
         "id": 2,
         "make": "Honda",
         "model": "Jazz",
-        "engine": 1.8,
-        "door": 5,
+        "engine": "1.8",
+        "door": "5",
         "wheels": 4,
         "carType": "Hatchback"
       },
@@ -24,8 +24,8 @@
         "id": 3,
         "make": "Honda",
         "model": "Accord",
-        "engine": 2.0,
-        "door": 4,
+        "engine": "2",
+        "door": "4",
         "wheels": 4,
         "carType": "Sedan"
       },
@@ -33,8 +33,8 @@
         "id": 4,
         "make": "Toyota",
         "model": "Corolla",
-        "engine": 1.8,
-        "door": 4,
+        "engine": "1.8",
+        "door": "4",
         "wheels": 4,
         "carType": "Sedan"
       },
@@ -42,8 +42,8 @@
         "id": 5,
         "make": "Toyota",
         "model": "Camry",
-        "engine": 2.0,
-        "door": 4,
+        "engine": "2",
+        "door": "4",
         "wheels": 4,
         "carType": "Sedan"
       },
@@ -51,8 +51,8 @@
         "id": 6,
         "make": "Mitsubishi",
         "model": "Lancer",
-        "engine": 2.0,
-        "door": 5,
+        "engine": "2",
+        "door": "5",
         "wheels": 4,
         "carType": "Hatchback"
       },
@@ -60,10 +60,10 @@
         "id": 7,
         "make": "Mitsubishi",
         "model": "Outlander",
-        "engine": 3.0,
-        "door": 5,
+        "engine": "3",
+        "door": "5",
         "wheels": 4,
-        "carType": "4WD"
+        "carType": "Sedan"
       }
     ]
   },
@@ -74,7 +74,7 @@
         "id": 1,
         "make": "Honda",
         "model": "CBR",
-        "engine": 250,
+        "engine": "2",
         "wheels": 2,
         "carType": "Road"
       },
@@ -82,7 +82,7 @@
         "id": 2,
         "make": "BMW",
         "model": "C600",
-        "engine": 800,
+        "engine": "1.5",
         "wheels": 2,
         "carType": "Road"
       },
@@ -90,7 +90,7 @@
         "id": 3,
         "make": "Ducati",
         "model": "1000 SS",
-        "engine": 250,
+        "engine": "1.5",
         "wheels": 2,
         "carType": "Road"
       },
@@ -98,7 +98,7 @@
         "id": 4,
         "make": "Kawasaki",
         "model": "1000GTR",
-        "engine": 1000,
+        "engine": "1.5",
         "wheels": 2,
         "carType": "Road"
       },
@@ -106,7 +106,7 @@
         "id": 5,
         "make": "Susuki",
         "model": "A100",
-        "engine": 800,
+        "engine": "2",
         "wheels": 2,
         "carType": "Off-Road"
       },
@@ -114,7 +114,7 @@
         "id": 6,
         "make": "Susuki",
         "model": "GS500E",
-        "engine": 500,
+        "engine": "2",
         "wheels": 2,
         "carType": "Off-Road"
       },
@@ -122,7 +122,7 @@
         "id": 7,
         "make": "Susuki",
         "model": "GSX1100",
-        "engine": 1100,
+        "engine": "2",
         "wheels": 2,
         "carType": "Off-Road"
       }

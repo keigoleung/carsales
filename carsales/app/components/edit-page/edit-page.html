@@ -1,5 +1,5 @@
 ﻿<div class="add-page" ng-class='{submitted: submitted==true}'>
-    <h1>Add <span ng-if="vm.type==='Car'">Car</span><span ng-if="vm.type==='Bike'">Bike</span></h1>
+    <h1>Edit <span ng-if="vm.type==='Car'">Car</span><span ng-if="vm.type==='Bike'">Bike</span></h1>
     <form name="addForm" novalidate ng-submit="vm.submit(addForm.$valid)">
         <div>
             <div class="form-group">
@@ -12,6 +12,7 @@
                 </select>
                 <select class="form-control" name="carmake" ng-model="vm.vehicle.make" ng-required="true" ng-if="vm.type==='Bike'">
                     <option value="">Please Select</option>
+                    <option value="Honda">Honda</option>
                     <option value="BMW">BMW</option>
                     <option value="Ducati">Ducati</option>
                     <option value="Kawasaki">Kawasaki</option>

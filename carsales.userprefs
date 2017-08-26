@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{95FF65CA-377F-4526-8F0D-B65D2920A720}|">
   <MonoDevelop.Ide.ItemProperties.carsales PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="carsales/app/components/add-page/add-page.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="carsales/app/components/products-page/products-page.html">
     <Files>
-      <File FileName="carsales/index.html" Line="11" Column="11" />
-      <File FileName="carsales/app/components/products-page/products-page.service.js" Line="31" Column="45" />
-      <File FileName="carsales/app/components/products-page/products-page.html" Line="8" Column="9" />
-      <File FileName="carsales/app/components/add-page/add-page.html" Line="56" Column="48" />
-      <File FileName="carsales/products.json" Line="30" Column="26" />
+      <File FileName="carsales/index.html" Line="33" Column="37" />
+      <File FileName="carsales/app/components/add-page/add-page.html" Line="25" Column="25" />
+      <File FileName="carsales/app/components/edit-page/edit-page.html" Line="15" Column="57" />
+      <File FileName="carsales/products.json" Line="78" Column="19" />
+      <File FileName="carsales/app/components/products-page/products-page.html" Line="43" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

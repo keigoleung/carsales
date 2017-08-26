@@ -28,8 +28,8 @@
             }
         }
 
-        function editVehicle(type, id) {
-            $state.go('vehicle.edit');
+        function editVehicle(type, list) {
+            $state.go('vehicle.edit', { obj: type, list: list });
         }
 
         function addVehicle(type) {
