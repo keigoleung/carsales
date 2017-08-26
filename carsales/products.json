@@ -1,0 +1,131 @@
+[
+  {
+    "VehicleType": "Car",
+    "list": [
+      {
+        "id": 1,
+        "make": "Honda",
+        "model": "Civic",
+        "engine": 1.5,
+        "door": 5,
+        "wheels": 4,
+        "carType": "Hatchback"
+      },
+      {
+        "id": 2,
+        "make": "Honda",
+        "model": "Jazz",
+        "engine": 1.8,
+        "door": 5,
+        "wheels": 4,
+        "carType": "Hatchback"
+      },
+      {
+        "id": 3,
+        "make": "Honda",
+        "model": "Accord",
+        "engine": 2.0,
+        "door": 4,
+        "wheels": 4,
+        "carType": "Sedan"
+      },
+      {
+        "id": 4,
+        "make": "Toyota",
+        "model": "Corolla",
+        "engine": 1.8,
+        "door": 4,
+        "wheels": 4,
+        "carType": "Sedan"
+      },
+      {
+        "id": 5,
+        "make": "Toyota",
+        "model": "Camry",
+        "engine": 2.0,
+        "door": 4,
+        "wheels": 4,
+        "carType": "Sedan"
+      },
+      {
+        "id": 6,
+        "make": "Mitsubishi",
+        "model": "Lancer",
+        "engine": 2.0,
+        "door": 5,
+        "wheels": 4,
+        "carType": "Hatchback"
+      },
+      {
+        "id": 7,
+        "make": "Mitsubishi",
+        "model": "Outlander",
+        "engine": 3.0,
+        "door": 5,
+        "wheels": 4,
+        "carType": "4WD"
+      }
+    ]
+  },
+  {
+    "VehicleType": "Bike",
+    "list": [
+      {
+        "id": 1,
+        "make": "Honda",
+        "model": "CBR",
+        "engine": 250,
+        "wheels": 2,
+        "bikeType": "Road"
+      },
+      {
+        "id": 2,
+        "make": "BMW",
+        "model": "C600",
+        "engine": 800,
+        "wheels": 2,
+        "bikeType": "Road"
+      },
+      {
+        "id": 3,
+        "make": "Ducati",
+        "model": "1000 SS",
+        "engine": 250,
+        "wheels": 2,
+        "bikeType": "Road"
+      },
+      {
+        "id": 4,
+        "make": "Kawasaki",
+        "model": "1000GTR",
+        "engine": 1000,
+        "wheels": 2,
+        "bikeType": "Road"
+      },
+      {
+        "id": 5,
+        "make": "Susuki",
+        "model": "A100",
+        "engine": 800,
+        "wheels": 2,
+        "bikeType": "Off-Road"
+      },
+      {
+        "id": 6,
+        "make": "Susuki",
+        "model": "GS500E",
+        "engine": 500,
+        "wheels": 2,
+        "bikeType": "Off-Road"
+      },
+      {
+        "id": 7,
+        "make": "Susuki",
+        "model": "GSX1100",
+        "engine": 1100,
+        "wheels": 2,
+        "bikeType": "Off-Road"
+      }
+    ]
+  }
+]

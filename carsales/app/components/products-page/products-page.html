@@ -1,0 +1,48 @@
+﻿<div class="products-page">
+    <div class="products-con">
+        <div>
+            <a class="btn btn-primary" ng-click="vm.addVehicle('Car')">Add Car</a>
+            <a class="btn btn-primary" ng-click="vm.addVehicle('Bike')">Add Bike</a>
+        </div>
+
+        <div ng-tabs class="passtab" ng-init="vm.tabs=tabs">
+            <div class="tabwrap">
+                <ul class="nav nav-tabs">
+                    <li ng-tab-head="on" ng-repeat="vehicles in vm.products">
+                        <a>{{::vehicles.VehicleType}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div ng-tab-body class="tab-pane" ng-repeat="vehicles in vm.products">
+                    <table class="table">
+                        <tbody>
+                            <tr ng-repeat="vehicle in vehicles.list">
+                                <td>
+                                    {{vehicle.make}}
+                                </td>
+                                <td>
+                                    {{vehicle.model}}
+                                </td>
+                                <td>
+                                    {{vehicle.engine}}
+                                </td>
+                                <td ng-if="vehicles.VehicleType==='Bike'">
+                                    {{vehicle.door}}
+                                </td>
+                                <td>
+                                    {{vehicle.wheels}}
+                                </td>
+                                <td>
+                                    {{vehicle.carType}}
+                                </td>
+                                <td>
+                                    <a class="btn btn-primary pull-right" ng-click="vm.editVehicle(vehicles.VehicleType, vehicle.id)">Edit</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>

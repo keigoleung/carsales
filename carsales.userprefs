@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{95FF65CA-377F-4526-8F0D-B65D2920A720}|">
+  <MonoDevelop.Ide.ItemProperties.carsales PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="carsales/Scripts/angular.min.js">
+    <Files>
+      <File FileName="carsales/index.html" Line="50" Column="64" />
+      <File FileName="carsales/app/states/vehicle/edit/edit.config.js" Line="15" Column="19" />
+      <File FileName="carsales/app/states/vehicle/edit/edit.controller.js" Line="11" Column="6" />
+      <File FileName="carsales/app/states/vehicle/edit/edit.module.js" Line="3" Column="28" />
+      <File FileName="carsales/app/states/vehicle/edit/index.html" Line="4" Column="1" />
+      <File FileName="carsales/app/states/vehicle/vehicle.config.js" Line="12" Column="31" />
+      <File FileName="carsales/app/states/vehicle/vehicle.module.js" Line="13" Column="6" />
+      <File FileName="carsales/app/components/products-page/products-page.html" Line="47" Column="15" />
+      <File FileName="carsales/Scripts/angular.min.js" Line="5" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

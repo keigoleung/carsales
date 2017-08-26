@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95FF65CA-377F-4526-8F0D-B65D2920A720}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>carsales</RootNamespace>
+    <AssemblyName>carsales</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angular-sanitize.min.js" />
+    <Content Include="asset\css\styles.css" />
+    <Content Include="asset\images\product-1.jpg" />
+    <Content Include="asset\images\product-2.jpg" />
+    <Content Include="asset\images\product-3.jpg" />
+    <Content Include="asset\images\product-4.jpg" />
+    <Content Include="asset\images\product-5.jpg" />
+    <Content Include="asset\images\product-6.jpg" />
+    <Content Include="asset\images\product-7.jpg" />
+    <Content Include="asset\images\product-8.jpg" />
+    <Content Include="app\components\products-page\products-page.controller.js" />
+    <Content Include="app\components\products-page\products-page.directive.js" />
+    <Content Include="app\components\products-page\products-page.html" />
+    <Content Include="app\components\products-page\products-page.module.js" />
+    <Content Include="app\components\products-page\products-page.service.js" />
+    <Content Include="app\app.module.js" />
+    <Content Include="app\components\components.module.js" />
+    <Content Include="app\app.config.js" />
+    <Content Include="app\states\vehicle\vehicle.config.js" />
+    <Content Include="app\states\vehicle\vehicle.module.js" />
+    <Content Include="app\states\vehicle\list\index.html" />
+    <Content Include="app\states\vehicle\list\list.config.js" />
+    <Content Include="app\states\vehicle\list\list.controller.js" />
+    <Content Include="app\states\vehicle\list\list.module.js" />
+    <Content Include="Scripts\angular-ui-router.min.js" />
+    <Content Include="Scripts\ui-bootstrap-tpls-0.13.4.min.js" />
+    <Content Include="app\states\vehicle\add\index.html" />
+    <Content Include="app\states\vehicle\add\add.config.js" />
+    <Content Include="app\states\vehicle\add\add.controller.js" />
+    <Content Include="app\states\vehicle\add\add.module.js" />
+    <Content Include="app\states\vehicle\edit\edit.config.js" />
+    <Content Include="app\states\vehicle\edit\edit.controller.js" />
+    <Content Include="app\states\vehicle\edit\edit.module.js" />
+    <Content Include="app\states\vehicle\edit\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Content\bootstrap.min.css.map" />
+    <None Include="Content\bootstrap.css.map" />
+    <None Include="Content\bootstrap-theme.min.css.map" />
+    <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="products.json" />
+    <None Include="asset\.DS_Store" />
+    <None Include="asset\css\.DS_Store" />
+    <None Include="asset\images\.DS_Store" />
+    <None Include="app\states\.DS_Store" />
+    <None Include="app\states\vehicle\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\components\" />
+    <Folder Include="app\states\vehicle\add\" />
+    <Folder Include="app\states\vehicle\edit\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

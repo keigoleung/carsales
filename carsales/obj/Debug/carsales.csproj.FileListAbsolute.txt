@@ -1,0 +1,5 @@
+/Users/KenLeung/Projects/carsales/carsales/bin/carsales.dll
+/Users/KenLeung/Projects/carsales/carsales/bin/carsales.pdb
+/Users/KenLeung/Projects/carsales/carsales/obj/Debug/carsales.csproj.CoreCompileInputs.cache
+/Users/KenLeung/Projects/carsales/carsales/obj/Debug/carsales.dll
+/Users/KenLeung/Projects/carsales/carsales/obj/Debug/carsales.pdb
