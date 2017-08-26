@@ -1,5 +1,6 @@
 ﻿<div class="products-page">
     <div class="products-con">
+        <h1>Vehicle List</h1>
         <div>
             <a class="btn btn-primary" ng-click="vm.addVehicle('Car')">Add Car</a>
             <a class="btn btn-primary" ng-click="vm.addVehicle('Bike')">Add Bike</a>
@@ -19,7 +20,7 @@
                         <tbody>
                             <tr ng-repeat="vehicle in vehicles.list">
                                 <td>
-                                    {{vehicle.make}}
+                                    {{vehicle.id}}{{vehicle.make}}
                                 </td>
                                 <td>
                                     {{vehicle.model}}

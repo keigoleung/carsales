@@ -17,20 +17,23 @@
         activate();
 
         function activate() {
-            productsPageService.getProducts().then(
-	            function(data){
-		            vm.products = data;
-	            }
-            )
+            if(productsPageService.products) {
+                vm.products = productsPageService.products;
+            } else {
+                productsPageService.getProducts().then(
+                    function(data){
+                        vm.products = data;
+                    }
+                )
+            }
         }
 
         function editVehicle(type, id) {
-            console.log(type);
             $state.go('vehicle.edit');
         }
 
         function addVehicle(type) {
-            $state.go('vehicle.add');
+            $state.go('vehicle.add', { obj: type });
         }
         
     }

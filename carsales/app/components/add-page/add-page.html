@@ -1,0 +1,86 @@
+﻿<div class="add-page" ng-class='{submitted: submitted==true}'>
+    <h1>Add <span ng-if="vm.type==='Car'">Car</span><span ng-if="vm.type==='Bike'">Bike</span></h1>
+    <form name="addForm" novalidate ng-submit="vm.submit(addForm.$valid)">
+        <div>
+            <div class="form-group">
+                <label>make</label>
+                <select name="carmake" ng-model="vm.vehicle.make" ng-required="true" ng-if="vm.type==='Car'">
+                    <option value="">Please Select</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                </select>
+                <select name="carmake" ng-model="vm.vehicle.make" ng-required="true" ng-if="vm.type==='Bike'">
+                    <option value="">Please Select</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Ducati">Ducati</option>
+                    <option value="Kawasaki">Kawasaki</option>
+                    <option value="Susuki">Susuki</option>
+                </select>
+                <div class="errormsgcon" ng-messages="addForm.carmake.$error" ng-if='submitted' role="alert">
+                    <div class="errormsg" ng-message="required">This is required.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>model</label>
+                <input name="carmodel" ng-model="vm.vehicle.model" placeholder="Model" ng-required="true" />
+                <div class="errormsgcon" ng-messages="addForm.carmodel.$error" ng-if='submitted' role="alert">
+                    <div class="errormsg" ng-message="required">This is required.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Engine</label>
+                <select name="carengine" ng-model="vm.vehicle.engine" ng-required="true">
+                    <option value="">Please Select</option>
+                    <option value="1.5">1.5L</option>
+                    <option value="1.8">1.8L</option>
+                    <option value="2">2L</option>
+                    <option value="2.5">2.5L</option>
+                    <option value="3">3L</option>
+                </select>
+                <div class="errormsgcon" ng-messages="addForm.carengine.$error" ng-if='submitted' role="alert">
+                    <div class="errormsg" ng-message="required">This is required.</div>
+                </div>
+            </div>
+            <div class="form-group" ng-if="vm.type==='Car'">
+                <label>Door</label>
+                <select name="cardoor" ng-model="vm.vehicle.door" ng-required="true">
+                    <option value="">Please Select</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <div class="errormsgcon" ng-messages="addForm.cardoor.$error" ng-if='submitted' role="alert">
+                    <div class="errormsg" ng-message="required">This is required.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Wheels</label>
+                <input name="carwheels" ng-model="vm.vehicle.wheels" placeholder="Wheels" ng-required="true" />
+                <div class="errormsgcon" ng-messages="addForm.carwheels.$error" ng-if='submitted' role="alert">
+                    <div class="errormsg" ng-message="required">This is required.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Type</label>
+                <select name="cartype" ng-model="vm.vehicle.carType" ng-required="true" ng-if="vm.type==='Car'">
+                    <option value="">Please Select</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Sedan">Sedan</option>
+                </select>
+                <select name="cartype" ng-model="vm.vehicle.carType" ng-required="true" ng-if="vm.type==='Bike'">
+                    <option value="">Please Select</option>
+                    <option value="Road">Road</option>
+                    <option value="Off-Road">Off-Road</option>
+                </select>
+                <div class="errormsgcon" ng-messages="addForm.cartype.$error" ng-if='submitted' role="alert">
+                    <div class="errormsg" ng-message="required">This is required.</div>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-default" type="button" ng-click="vm.back()">Cancel</button>
+                <button class="btn btn-primary" type="submit" ng-click="submitted=true">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

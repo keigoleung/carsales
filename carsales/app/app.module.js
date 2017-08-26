@@ -13,3 +13,16 @@
         ]);
 
 })();
+
+(function () {
+    'use strict';
+
+    angular.module('app')
+        .service('underscore', underscoreService);
+
+    underscoreService.$inject = ['$window'];
+
+    function underscoreService($window) {
+        return $window._;
+    }
+})();

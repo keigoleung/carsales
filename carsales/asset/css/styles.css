@@ -6,8 +6,12 @@
     display: block !important;
 }
 
-@media (max-width: 991px) {
+.submitted input.ng-invalid {
+    border: 1px solid red;
+}
 
+
+@media (max-width: 991px) {
 }
 
 @media (max-width: 768px) {

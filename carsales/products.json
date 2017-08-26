@@ -76,7 +76,7 @@
         "model": "CBR",
         "engine": 250,
         "wheels": 2,
-        "bikeType": "Road"
+        "carType": "Road"
       },
       {
         "id": 2,
@@ -84,7 +84,7 @@
         "model": "C600",
         "engine": 800,
         "wheels": 2,
-        "bikeType": "Road"
+        "carType": "Road"
       },
       {
         "id": 3,
@@ -92,7 +92,7 @@
         "model": "1000 SS",
         "engine": 250,
         "wheels": 2,
-        "bikeType": "Road"
+        "carType": "Road"
       },
       {
         "id": 4,
@@ -100,7 +100,7 @@
         "model": "1000GTR",
         "engine": 1000,
         "wheels": 2,
-        "bikeType": "Road"
+        "carType": "Road"
       },
       {
         "id": 5,
@@ -108,7 +108,7 @@
         "model": "A100",
         "engine": 800,
         "wheels": 2,
-        "bikeType": "Off-Road"
+        "carType": "Off-Road"
       },
       {
         "id": 6,
@@ -116,7 +116,7 @@
         "model": "GS500E",
         "engine": 500,
         "wheels": 2,
-        "bikeType": "Off-Road"
+        "carType": "Off-Road"
       },
       {
         "id": 7,
@@ -124,7 +124,7 @@
         "model": "GSX1100",
         "engine": 1100,
         "wheels": 2,
-        "bikeType": "Off-Road"
+        "carType": "Off-Road"
       }
     ]
   }

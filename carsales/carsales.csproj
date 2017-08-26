@@ -93,6 +93,12 @@
     <Content Include="app\states\vehicle\edit\edit.controller.js" />
     <Content Include="app\states\vehicle\edit\edit.module.js" />
     <Content Include="app\states\vehicle\edit\index.html" />
+    <Content Include="app\components\add-page\add-page.controller.js" />
+    <Content Include="app\components\add-page\add-page.directive.js" />
+    <Content Include="app\components\add-page\add-page.html" />
+    <Content Include="app\components\add-page\add-page.module.js" />
+    <Content Include="Scripts\underscore-min.js" />
+    <Content Include="Scripts\angular-messages.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -118,6 +124,7 @@
     <Folder Include="app\components\" />
     <Folder Include="app\states\vehicle\add\" />
     <Folder Include="app\states\vehicle\edit\" />
+    <Folder Include="app\components\add-page\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

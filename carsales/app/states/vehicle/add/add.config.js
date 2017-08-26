@@ -14,6 +14,9 @@
                     "@": { templateUrl: 'app/states/vehicle/add/index.html' }
                 },
                 transitions: {
+                },
+                params: {
+                    obj: null
                 }
             });
 
