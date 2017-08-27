@@ -35,6 +35,7 @@
 
         function submit(valid) {
             if(valid){
+                // add vehicle
                 productsPageService.addVehicle(vm.vehicle, vm.type);
                 $state.go('vehicle.list');
             }

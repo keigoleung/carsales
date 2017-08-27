@@ -61,14 +61,6 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular-sanitize.min.js" />
     <Content Include="asset\css\styles.css" />
-    <Content Include="asset\images\product-1.jpg" />
-    <Content Include="asset\images\product-2.jpg" />
-    <Content Include="asset\images\product-3.jpg" />
-    <Content Include="asset\images\product-4.jpg" />
-    <Content Include="asset\images\product-5.jpg" />
-    <Content Include="asset\images\product-6.jpg" />
-    <Content Include="asset\images\product-7.jpg" />
-    <Content Include="asset\images\product-8.jpg" />
     <Content Include="app\components\products-page\products-page.controller.js" />
     <Content Include="app\components\products-page\products-page.directive.js" />
     <Content Include="app\components\products-page\products-page.html" />
@@ -81,16 +73,13 @@
     <Content Include="app\states\vehicle\vehicle.module.js" />
     <Content Include="app\states\vehicle\list\index.html" />
     <Content Include="app\states\vehicle\list\list.config.js" />
-    <Content Include="app\states\vehicle\list\list.controller.js" />
     <Content Include="app\states\vehicle\list\list.module.js" />
     <Content Include="Scripts\angular-ui-router.min.js" />
     <Content Include="Scripts\ui-bootstrap-tpls-0.13.4.min.js" />
     <Content Include="app\states\vehicle\add\index.html" />
     <Content Include="app\states\vehicle\add\add.config.js" />
-    <Content Include="app\states\vehicle\add\add.controller.js" />
     <Content Include="app\states\vehicle\add\add.module.js" />
     <Content Include="app\states\vehicle\edit\edit.config.js" />
-    <Content Include="app\states\vehicle\edit\edit.controller.js" />
     <Content Include="app\states\vehicle\edit\edit.module.js" />
     <Content Include="app\states\vehicle\edit\index.html" />
     <Content Include="app\components\add-page\add-page.controller.js" />
@@ -103,6 +92,9 @@
     <Content Include="app\components\edit-page\edit-page.directive.js" />
     <Content Include="app\components\edit-page\edit-page.html" />
     <Content Include="app\components\edit-page\edit-page.module.js" />
+    <Content Include="Scripts\jasmine.js" />
+    <Content Include="Scripts\jasmine-html.js" />
+    <Content Include="css\jasmine.css" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">

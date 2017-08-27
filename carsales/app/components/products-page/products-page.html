@@ -1,6 +1,6 @@
 ﻿<div class="products-page">
     <div class="products-con">
-        <h1>Vehicle List</h1>
+        <h1 class="title">Vehicle <span>List</span></h1>
         <div class="btn-con">
             <a class="btn btn-primary" ng-click="vm.addVehicle(vehicles.VehicleType)" ng-repeat="vehicles in vm.products">Add {{::vehicles.VehicleType}}</a>
             <!--<a class="btn btn-primary" ng-click="vm.addVehicle('Bike')">Add Bike</a>-->
@@ -19,17 +19,35 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Make</th>
-                                <th>Model</th>
-                                <th>Engine</th>
-                                <th ng-if="vehicles.VehicleType==='Car'">Door</th>
-                                <th>Wheels</th>
-                                <th>Type</th>
+                                <th>
+                                    <span ng-click="vm.sortBy('make')">Make</span>
+                                    <span class="sortorder" ng-show="vm.propertyName === 'make'" ng-class="{reverse: vm.reverse}"></span>
+                                </th>
+                                <th>
+                                    <span ng-click="vm.sortBy('model')">Model</span>
+                                    <span class="sortorder" ng-show="vm.propertyName === 'model'" ng-class="{reverse: vm.reverse}"></span>
+                                </th>
+                                <th>
+                                    <span ng-click="vm.sortBy('engine')">Engine</span>
+                                    <span class="sortorder" ng-show="vm.propertyName === 'engine'" ng-class="{reverse: vm.reverse}"></span>
+                                </th>
+                                <th ng-if="vehicles.VehicleType==='Car'">
+                                    <span ng-click="vm.sortBy('door')">Door</span>
+                                    <span class="sortorder" ng-show="vm.propertyName === 'door'" ng-class="{reverse: vm.reverse}"></span>
+                                </th>
+                                <th>
+                                    <span ng-click="vm.sortBy('wheels')">Wheels</span>
+                                    <span class="sortorder" ng-show="vm.propertyName === 'wheels'" ng-class="{reverse: vm.reverse}"></span>
+                                </th>
+                                <th>
+                                    <span ng-click="vm.sortBy('carType')">Type</span>
+                                    <span class="sortorder" ng-show="vm.propertyName === 'carType'" ng-class="{reverse: vm.reverse}"></span>
+                                </th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="vehicle in vehicles.list">
+                            <tr ng-repeat="vehicle in vehicles.list | orderBy:vm.propertyName:vm.reverse">
                                 <td>
                                     {{vehicle.make}}
                                 </td>

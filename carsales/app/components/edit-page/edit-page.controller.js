@@ -36,6 +36,7 @@
 
         function submit(valid) {
             if(valid){
+                // edit vehicle
                 productsPageService.editVehicle(vm.vehicle, vm.type);
                 $state.go('vehicle.list');
             }

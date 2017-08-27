@@ -1,12 +1,18 @@
 ﻿<Properties StartupConfiguration="{95FF65CA-377F-4526-8F0D-B65D2920A720}|">
   <MonoDevelop.Ide.ItemProperties.carsales PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="carsales/app/components/products-page/products-page.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="carsales/app/components/edit-page/edit-page.controller.js">
     <Files>
       <File FileName="carsales/index.html" Line="33" Column="37" />
-      <File FileName="carsales/app/components/add-page/add-page.html" Line="25" Column="25" />
-      <File FileName="carsales/app/components/edit-page/edit-page.html" Line="15" Column="57" />
+      <File FileName="carsales/app/components/add-page/add-page.html" Line="2" Column="27" />
+      <File FileName="carsales/app/components/edit-page/edit-page.html" Line="2" Column="21" />
       <File FileName="carsales/products.json" Line="78" Column="19" />
-      <File FileName="carsales/app/components/products-page/products-page.html" Line="43" Column="53" />
+      <File FileName="carsales/app/components/products-page/products-page.html" Line="42" Column="37" />
+      <File FileName="carsales/asset/css/styles.css" Line="45" Column="2" />
+      <File FileName="carsales/app/components/products-page/products-page.controller.js" Line="23" Column="47" />
+      <File FileName="carsales/app/components/products-page/products-page.service.js" Line="9" Column="25" />
+      <File FileName="carsales/app/app.config.js" Line="1" Column="1" />
+      <File FileName="carsales/app/components/add-page/add-page.controller.js" Line="38" Column="31" />
+      <File FileName="carsales/app/components/edit-page/edit-page.controller.js" Line="41" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

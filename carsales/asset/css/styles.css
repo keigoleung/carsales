@@ -2,11 +2,21 @@
 
 }
 
+h1.title {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #262626;
+}
+
+h1.title span {
+    color: #007cc2;
+}
+
 .passtab .ng-show {
     display: block !important;
 }
 
-.submitted input.ng-invalid {
+.submitted input.ng-invalid, .submitted select.ng-invalid {
     border: 1px solid red;
 }
 
@@ -20,6 +30,54 @@
 
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
     vertical-align: middle;
+}
+
+.sortorder:after {
+    content: '\25b2';
+}
+
+.sortorder.reverse:after {
+    content: '\25bc';
+}
+
+.errormsgcon {
+    position: relative;
+}
+
+.errormsg {
+    position: absolute;
+    top: 5px;
+    border: 1px solid #c3c3c2;
+    background: #fff;
+    padding: 5px;
+    z-index: 10;
+    box-shadow: 1px 1px 5px #cecece;
+}
+
+.errormsg:after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+}
+
+.errormsg:before {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: 10px;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #c3c3c2;
+    border-right: 10px solid transparent;
 }
 
 @media (max-width: 991px) {

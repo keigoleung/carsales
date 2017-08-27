@@ -1,5 +1,5 @@
 ﻿<div class="add-page" ng-class='{submitted: submitted==true}'>
-    <h1>Add <span ng-if="vm.type==='Car'">Car</span><span ng-if="vm.type==='Bike'">Bike</span></h1>
+    <h1 class="title">Add <span ng-if="vm.type==='Car'">Car</span><span ng-if="vm.type==='Bike'">Bike</span></h1>
     <form name="addForm" novalidate ng-submit="vm.submit(addForm.$valid)">
         <div>
             <div class="form-group">
